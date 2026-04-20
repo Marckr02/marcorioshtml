@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web Personal | Contáctame</title>
+</head>
+<body>
+    <header>
+        <h1>Contáctame</h1>
+        <nav aria-label="Navegación secundaria">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quien-soy.html">¿Quién soy yo?</a></li>
+                <li><a href="experiencia.html">Experiencia laboral</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Información de contacto</h2>
+            <p>Puedes contactarme a través de los siguientes medios:</p>
+            <ul>
+                <li>Correo electrónico institucional: marco.rios@epn.edu.ec</li>
+                <li>Correo electrónico personal: david2002rios@gmail.com</li>
+                <li>Teléfono: 0969048485</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Formulario de contacto</h2>
+            <p>Completa el formulario y me pondre en contacto lo más pronto posible.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Datos de contacto</legend>
+
+                    <p>
+                        <label for="nombre">Nombre</label><br>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="Ej: Juan Pérez">
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico</label><br>
+                        <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="Ej: juan.perez@example.com">
+                    </p>
+
+                    <p>
+                        <label for="telefono">Celular</label><br>
+                        <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" placeholder="Ej: 0987654321">
+                    </p>
+
+                    <p>
+                        <label for="motivo">Motivo de contacto</label><br>
+                        <select id="motivo" name="motivo" required>
+                            <option value="">Seleccione una opción</option>
+                            <option value="proyecto">Proyecto web</option>
+                            <option value="consulta">Consulta académica</option>
+                            <option value="trabajo">Oportunidad laboral</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="mensaje">Mensaje</label><br>
+                        <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="500" placeholder="Ej: Me gustaría hablar sobre un proyecto web."></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Enviar mensaje</button>
+                        <button type="reset">Limpiar</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver al inicio</a></p>
+    </footer>
+</body>
+</html>
