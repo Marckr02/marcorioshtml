@@ -1,0 +1,293 @@
+/* ============================================
+   Estilos CSS Básico - CV Personal
+   ============================================ */
+
+/* --- 1. Reset básico --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- 2. Variables de colores --- */
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #34495e;
+    --color-acento: #1abc9c;
+    --color-oscuro: #16a085;
+    --color-claro: #ecf0f1;
+    --color-blanco: #ffffff;
+    --color-texto: #333333;
+    --color-texto-claro: #7f8c8d;
+    --color-borde: #bdc3c7;
+}
+
+/* --- 3. Estilos generales del cuerpo --- */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-claro);
+}
+
+/* --- 4. Contenedor centrado --- */
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- 5. Cabecera --- */
+.cabecera {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 30px 0;
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 1.1em;
+    opacity: 0.9;
+    margin-bottom: 20px;
+}
+
+/* --- 6. Menú de navegación --- */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.enlace-menu {
+    color: var(--color-blanco);
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.enlace-menu:hover {
+    background-color: var(--color-acento);
+}
+
+/* --- 7. Sección principal --- */
+.principal {
+    padding: 30px 0;
+    min-height: 500px;
+}
+
+.seccion {
+    background-color: var(--color-blanco);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-seccion {
+    color: var(--color-primario);
+    border-bottom: 3px solid var(--color-acento);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- 8. Tarjetas --- */
+.tarjeta {
+    border: 1px solid var(--color-borde);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #fafafa;
+}
+
+.tarjeta h3 {
+    color: var(--color-secundario);
+    margin-bottom: 10px;
+}
+
+/* --- 9. Imagen de perfil --- */
+.imagen-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid var(--color-acento);
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* --- 10. Listas --- */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+/* --- 11. Imágenes de proyectos --- */
+.imagen-proyecto {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen-proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid var(--color-borde);
+}
+
+.imagen-proyecto figcaption {
+    color: var(--color-texto-claro);
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* --- 12. Proyectos --- */
+.proyecto {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--color-borde);
+}
+
+.proyecto:last-child {
+    border-bottom: none;
+}
+
+.proyecto h3 {
+    color: var(--color-primario);
+    margin-bottom: 10px;
+}
+
+/* --- 13. Botones y enlaces --- */
+.boton {
+    display: inline-block;
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.boton:hover {
+    background-color: var(--color-oscuro);
+}
+
+.enlace-externo {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.enlace-externo:hover {
+    text-decoration: underline;
+}
+
+/* --- 14. Formulario --- */
+.formulario {
+    margin-top: 15px;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-borde);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: var(--color-acento);
+}
+
+.botones {
+    margin-top: 15px;
+}
+
+.boton-enviar {
+    background-color: var(--color-acento);
+    color: var(--color-blanco);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.boton-enviar:hover {
+    background-color: var(--color-oscuro);
+}
+
+.boton-limpiar {
+    background-color: var(--color-texto-claro);
+    color: var(--color-blanco);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.boton-limpiar:hover {
+    background-color: #7f8c8d;
+}
+
+/* --- 15. Pie de página --- */
+.pie {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* --- 16. Responsive (móvil) --- */
+@media (max-width: 600px) {
+    .titulo-principal {
+        font-size: 1.8em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor {
+        width: 95%;
+    }
+
+    .seccion {
+        padding: 15px;
+    }
+
+    .imagen-perfil {
+        width: 150px;
+        height: 150px;
+    }
+}

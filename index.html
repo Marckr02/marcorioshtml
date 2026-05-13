@@ -3,29 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Web Personal | Inicio</title>
+    <title>Mi Web Personal | Marco Rios</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Mi Web Personal: Marco Rios</h1>
-        <h2>Descripción</h2>
-            <p>Esta es mi web personal donde se muestra mi perfil personal, profesional y de intereses.</p>
+    <!-- Encabezado con navegación -->
+    <header class="cabecera">
+        <div class="contenedor">
+            <h1 class="titulo-principal">Marco Rios</h1>
+            <p class="subtitulo">Estudiante de Ingeniería en Software - EPN</p>
+            <nav class="navegacion">
+                <ul class="menu">
+                    <li><a href="#inicio" class="enlace-menu">Inicio</a></li>
+                    <li><a href="#quien-soy" class="enlace-menu">Quién soy</a></li>
+                    <li><a href="#experiencia" class="enlace-menu">Experiencia</a></li>
+                    <li><a href="#portafolio" class="enlace-menu">Portafolio</a></li>
+                    <li><a href="#contacto" class="enlace-menu">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Menú principal</h2>
-            <ul>
-                <li><a href="quien-soy.html">¿Quién soy yo?</a></li>
-                <li><a href="experiencia.html">Experiencia laboral</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="contacto.html">Contáctame</a></li>
-            </ul>
-        </section>
+    <!-- Contenido principal -->
+    <main class="principal">
+        <div class="contenedor">
+            <!-- Sección de inicio -->
+            <section id="inicio" class="seccion inicio">
+                <h2>Bienvenido a mi Web Personal</h2>
+                <p>Esta es mi web personal donde se muestra mi perfil personal, profesional y de intereses.</p>
+            </section>
+
+            <!-- Sección Quién soy -->
+            <section id="quien-soy" class="seccion">
+                <h2 class="titulo-seccion">¿Quién soy yo?</h2>
+
+                <div class="tarjeta presentacion">
+                    <img src="img/foto_perfil.jpg" alt="Foto de perfil de Marco Rios" class="imagen-perfil">
+                    <div class="contenido-tarjeta">
+                        <h3>Presentación</h3>
+                        <p>Hola, mi nombre es Marco Rios, estudiante de 6to semestre de Ingeniería en Software de la Escuela Politécnica Nacional. Soy un joven apasionado por aprender y crecer en el campo de la tecnología, con un enfoque especial en el desarrollo web y automatización de procesos.</p>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Historia</h3>
+                    <p>Desde pequeño me ha llamado la atención el mundo de la tecnología, con la curiosidad de entender cómo funcionan las cosas y cómo se pueden mejorar. Esta curiosidad me ha llevado a explorar diferentes áreas de la programación, siempre buscando aprender algo nuevo y aplicarlo en proyectos prácticos.</p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Habilidades personales</h3>
+                    <ul class="lista-habilidades">
+                        <li>Responsabilidad y cumplimiento</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Comunicación efectiva</li>
+                        <li>Adaptabilidad y aprendizaje continuo</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Lenguajes de programación</h3>
+                    <ul class="lista-skills">
+                        <li>HTML</li>
+                        <li>HTML5</li>
+                        <li>CSS básico</li>
+                        <li>Python básico</li>
+                        <li>SQL básico</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección Experiencia -->
+            <section id="experiencia" class="seccion">
+                <h2 class="titulo-seccion">Experiencia laboral</h2>
+
+                <div class="tarjeta">
+                    <h3>Situación actual</h3>
+                    <p>Actualmente no estoy trabajando de forma formal. Sin embargo, he desarrollado proyectos académicos y personales que me han permitido aplicar los conocimientos adquiridos hasta ahora en la Carrera.</p>
+                    <a href="#portafolio" class="boton">Ver mi portafolio</a>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Proyectos realizados</h3>
+                    <ul class="lista-experiencia">
+                        <li>Agentes de inteligencia artificial para pymes</li>
+                        <li>Administrador de ayudantes de proyecto de investigación</li>
+                        <li>Mantenimiento de sistemas de inventario para un negocio</li>
+                        <li>Instalación y mantenimiento de redes de internet</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección Portafolio -->
+            <section id="portafolio" class="seccion">
+                <h2 class="titulo-seccion">Portafolio</h2>
+                <p class="introduccion">Estos proyectos representan trabajos académicos y personales realizados durante mi formación.</p>
+
+                <article class="proyecto">
+                    <h3>GalaPaguitos: Agente de Inteligencia Artificial enfocado en Pymes</h3>
+                    <figure class="imagen-proyecto">
+                        <img src="img/proyecto1_GalaPaguitos.jpeg" alt="GalaPaguitos">
+                        <figcaption>Flujo de trabajo de GalaPaguitos en n8n.</figcaption>
+                    </figure>
+                    <p>Este proyecto fue desarrollado en equipo para la asignatura de Inteligencia Artificial y Machine Learning, en el cual realizamos un bot de inteligencia artificial para ayudar a las pymes mediante n8n.</p>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Videojuego: Un videojuego basado en la leyenda de Cantuña</h3>
+                    <figure class="imagen-proyecto">
+                        <img src="img/proyecto2_Videojuego.jpg" alt="Videojuego basado en la leyenda de Cantuña">
+                        <figcaption>Menú de inicio del videojuego.</figcaption>
+                    </figure>
+                    <p>Videojuego desarrollado en equipo para la asignatura de Computación Gráfica, basado en la leyenda de Cantuña, con el objetivo de aprender a programar utilizando conceptos de computación gráfica.</p>
+                    <a href="https://github.com/Marckr02/2025B_GRSW2_GR8" target="_blank" class="enlace-externo">Ver repositorio del proyecto</a>
+                </article>
+
+                <article class="proyecto">
+                    <h3>Administrador de ayudantes de proyecto de investigación</h3>
+                    <figure class="imagen-proyecto">
+                        <img src="img/proyecto3_GestionaAyudantes.png" alt="Administrador de ayudantes">
+                        <figcaption>Interfaz de administración para un proyecto académico.</figcaption>
+                    </figure>
+                    <p>Proyecto enfocado en organizar información visualmente y facilitar la administración de ayudantes en proyectos de investigación del DICC de la Escuela Politécnica Nacional.</p>
+                    <a href="https://github.com/rubbb2525/proyecto-disenio-de-software-g4-2025B" target="_blank" class="enlace-externo">Ver repositorio del proyecto</a>
+                </article>
+            </section>
+
+            <!-- Sección Contacto -->
+            <section id="contacto" class="seccion">
+                <h2 class="titulo-seccion">Contáctame</h2>
+
+                <div class="tarjeta contacto-info">
+                    <h3>Información de contacto</h3>
+                    <p>Puedes contactarme a través de los siguientes medios:</p>
+                    <ul class="lista-contacto">
+                        <li>Correo institucional: marco.rios@epn.edu.ec</li>
+                        <li>Correo personal: david2002rios@gmail.com</li>
+                        <li>Teléfono: 0969048485</li>
+                    </ul>
+                </div>
+
+                <div class="tarjeta formulario-contacto">
+                    <h3>Formulario de contacto</h3>
+                    <p>Completa el formulario y me pondré en contacto lo más pronto posible.</p>
+
+                    <form action="#" method="post" class="formulario">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="60" placeholder="Ej: Juan Pérez">
+                        </div>
+
+                        <div class="campo">
+                            <label for="correo">Correo electrónico</label>
+                            <input type="email" id="correo" name="correo" required autocomplete="email" placeholder="Ej: juan.perez@example.com">
+                        </div>
+
+                        <div class="campo">
+                            <label for="telefono">Celular</label>
+                            <input type="tel" id="telefono" name="telefono" required pattern="[0-9]{10}" placeholder="Ej: 0987654321">
+                        </div>
+
+                        <div class="campo">
+                            <label for="motivo">Motivo de contacto</label>
+                            <select id="motivo" name="motivo" required>
+                                <option value="">Seleccione una opción</option>
+                                <option value="proyecto">Proyecto web</option>
+                                <option value="consulta">Consulta académica</option>
+                                <option value="trabajo">Oportunidad laboral</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="6" required minlength="10" maxlength="500" placeholder="Ej: Me gustaría hablar sobre un proyecto web."></textarea>
+                        </div>
+
+                        <div class="botones">
+                            <button type="submit" class="boton boton-enviar">Enviar mensaje</button>
+                            <button type="reset" class="boton boton-limpiar">Limpiar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer>
-        <p>Marco Rios</p>
+    <!-- Pie de página -->
+    <footer class="pie">
+        <div class="contenedor">
+            <p>Marco Rios - Todos los derechos reservados</p>
+        </div>
     </footer>
 </body>
 </html>
